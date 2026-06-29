@@ -1,0 +1,17 @@
+{
+  "name": "undertree-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "npx next dev",
+    "build": "npx next build",
+    "start": "npx next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@types/canvas-confetti": "^1.9.0",
+    "canvas-confetti": "^1.9.4",
+    "framer-motion": "^12.42.0",
+    "lucide-react": "^1.22.0"
+  }
+}
