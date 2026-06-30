@@ -86,7 +86,7 @@ export default function Playground() {
           if (a.status === 'frying') {
             const nextTime = a.fryTime + 0.25;
             const nextStatus = nextTime >= 4 ? 'done' : 'frying';
-            if (nextStatus === 'done' && a.status !== 'done') {
+            if (nextStatus === 'done') {
               playSound(440, 0.15); // Golden crisp ping!
             }
             return {
