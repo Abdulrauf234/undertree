@@ -32,11 +32,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${outfit.variable} ${playfair.variable} scroll-smooth`}
-    >
-      <body className="font-sans antialiased text-[#F7F4EB] bg-[#0D1F14] bg-grain min-h-screen relative selection:bg-[#D8BE7A] selection:text-[#0D1F14]">
+    <html suppressHydrationWarning lang="en">
+      <body className={`${outfit.variable} ${playfair.variable} font-sans antialiased text-[#F7F4EB] bg-[#0D1F14] bg-grain min-h-screen relative scroll-smooth selection:bg-[#D8BE7A] selection:text-[#0D1F14]`}>
         {children}
       </body>
     </html>
