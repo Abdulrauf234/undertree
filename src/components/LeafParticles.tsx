@@ -43,7 +43,7 @@ export default function LeafParticles() {
             width: leaf.size,
             height: leaf.size,
           }}
-          initial={{ y: '-10%', rotation: leaf.rotation }}
+          initial={{ y: '-10%', rotate: leaf.rotation }}
           animate={{
             y: '110%',
             x: [
@@ -52,7 +52,7 @@ export default function LeafParticles() {
               `-${leaf.sway / 2}px`, 
               `${leaf.sway / 3}px`
             ],
-            rotate: leaf.rotation + 360,
+            rotate: leaf.rotation + (Math.random() > 0.5 ? 360 : -360),
           }}
           transition={{
             duration: leaf.duration,
